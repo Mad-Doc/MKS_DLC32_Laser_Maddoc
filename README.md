@@ -1,5 +1,6 @@
 # MKS DLC32 Firmware (Cartesian / Laser)
 Modifié par Maddoc.lab's
+configurer pour upload Linux! 
 
 Firmware personnalisé pour carte **MKS DLC32** basé sur **Grbl_ESP32**, avec adaptations orientées laser et interface MKS.
 
