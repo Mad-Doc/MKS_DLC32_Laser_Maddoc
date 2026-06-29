@@ -189,8 +189,10 @@ static void reset_variables() {
         }
 
         if(mks_updata.updata_flag == UD_NO_FILE) {
+			#ifdef ENABLE_WIFI
             WebUI::wifi_config.mks_setup();
-        }
+        	#endif
+		}
         
 #if defined(USE_BL_TOUCH)
         BLTOUCH_push_up();
