@@ -93,14 +93,14 @@ void mks_draw_ready(void) {
 }
 
 static void disp_imgbtn(void) {
-
+#ifdef ENABLE_WIFI
     if (mks_get_wifi_status() == false){ 
         ready_src.ready_imgbtn_wifi_status = lv_imgbtn_creat_n_mks(mks_global.mks_src ,ready_src.ready_imgbtn_wifi_status, &png_wifi_disconnect, &png_wifi_disconnect, 0, 0, event_handler);
     }
     else{
         ready_src.ready_imgbtn_wifi_status = lv_imgbtn_creat_n_mks(mks_global.mks_src ,ready_src.ready_imgbtn_wifi_status, &png_wifi_connect, &png_wifi_connect, 0, 0, event_handler);
     }
-
+#endif
     ready_src.ready_imgbtn_adjust_laser = lv_imgbtn_creat_mks(mks_global.mks_src_1, ready_src.ready_imgbtn_adjust_laser, &png_las_pre, &png_las, LV_ALIGN_IN_TOP_LEFT, 47, 10, event_handler);
     ready_src.ready_imgbtn_Control = lv_imgbtn_creat_mks(mks_global.mks_src_1, ready_src.ready_imgbtn_Control, &png_ctrl_pre, &Control, LV_ALIGN_IN_TOP_LEFT,147, 10, event_handler);
     ready_src.ready_imgbtn_Sculpture = lv_imgbtn_creat_mks(mks_global.mks_src_1, ready_src.ready_imgbtn_Sculpture, &png_file_pre, &Sculpture, LV_ALIGN_IN_TOP_LEFT, 247, 10, event_handler);
