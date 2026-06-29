@@ -17,12 +17,12 @@ Ce projet pilote un laser.
 Ce firmware est un fork / une adaptation de Grbl_ESP32.
 
 - Projet source: Grbl_ESP32
-- Cible principale: MKS DLC32
+- Cible principale: MKS DLC32 V2.1
 - Build system: PlatformIO
 
 ## Materiel cible
 
-- Carte: MKS DLC32 (profil machine CoreXY)
+- Carte: MKS DLC32 (profil machine Cartesian)
 - Environnement PlatformIO: `mks_dlc32_v2_1`
 - Port serie exemple: `/dev/ttyUSB1`
 
