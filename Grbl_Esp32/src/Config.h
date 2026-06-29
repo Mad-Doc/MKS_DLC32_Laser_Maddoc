@@ -99,7 +99,7 @@ const int MAX_N_AXIS = 6;
 // #define ENABLE_BLUETOOTH  // enable bluetooth
 
 #define ENABLE_SD_CARD                  /* enable use of SD Card to run jobs        */ 
-#define ENABLE_WIFI                     /* enable wifi                              */
+//#define ENABLE_WIFI                     /* enable wifi                              */
 #define ENABLE_LCD                      /* enable TS35 LCD for LVGL @ 6.12          */
 
 #if defined(ENABLE_WIFI) || defined(ENABLE_BLUETOOTH)
